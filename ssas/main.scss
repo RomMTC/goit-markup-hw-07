@@ -1,0 +1,42 @@
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/modern-normalize';
+@import './components/logo';
+@import './components/navigation'
+
+body {
+  background-color: #ffffff;
+  color: $primaryTextColor;
+  font-family: $primaryFont;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+p {
+margin-top: 0;
+margin-bottom: 0;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+p:last-child {
+margin-bottom: 0;
+}
+img {
+display: block;
+max-width: 100%;
+height: auto;
+}
+//   Header
+.page-header {
+padding-top: 24px;
+padding-bottom: 25px;
+border-bottom: 1px solid #ececec;
+}
+.page-header__container {
+display: flex;
+align-items: center;
+}
