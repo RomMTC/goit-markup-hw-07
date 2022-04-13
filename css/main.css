@@ -298,6 +298,10 @@ summary {
   align-items: center;
 }
 
+.logo__secondary {
+  color: #000000;
+}
+
 .page-header__mail {
   margin-left: auto;
   margin-right: 50px;
@@ -337,6 +341,10 @@ summary {
 }
 
 .logo__secondary {
+  color: #000000;
+}
+
+.logo__secondary-color {
   color: #000000;
 }
 
@@ -394,15 +402,7 @@ summary {
   align-items: center;
 }
 
-.logo__first {
-  color: #2196f3;
-  font-family: var(--logo-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo__secondary {
+.logo__secondary-color {
   color: #ffffff;
 }
 

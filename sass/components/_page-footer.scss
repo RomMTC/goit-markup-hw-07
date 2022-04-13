@@ -10,14 +10,7 @@
     flex-wrap: wrap;
     align-items: center;
   }
-  .logo__first {
-    color: #2196f3;
-    font-family: var(--logo-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  .logo__secondary {
+  .logo__secondary-color {
     @include logoColor(#ffffff);
   }
   .footer-address {

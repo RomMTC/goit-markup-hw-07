@@ -9,6 +9,9 @@
     display: flex;
     align-items: center;
     }
+    .logo__secondary {
+      @include logoColor(#000000);
+    }
     .page-header__mail {
         @extend .link;
         margin-left: auto;
