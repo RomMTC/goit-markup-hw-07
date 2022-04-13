@@ -1,10 +1,11 @@
 @import './utils/variables';
 @import './utils/placeholders';
+@import './utils/mixins';
 @import './utils/modern-normalize';
 @import './components/page-header';
 @import './components/logo';
 @import './components/navigation';
-
+@import './components/page-footer';
 
 body {
   background-color: #ffffff;

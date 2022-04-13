@@ -8,5 +8,5 @@
     margin: 0 93px 0 0;
   }
   .logo__secondary {
-    color: #000000;
+    @include logoColor(#000000);
   }

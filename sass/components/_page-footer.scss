@@ -1,0 +1,157 @@
+/* Footer */
+.page-footer {
+    background-color: #2f303a;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .page-footer__container {
+      @extend .container;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .logo__first {
+    color: #2196f3;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .logo__secondary {
+    @include logoColor(#ffffff);
+  }
+  .footer-address {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #ffffff;
+  }
+  .footer-item {
+    margin-top: 9px;
+    margin-bottom: 9px;
+  }
+  .footer-item:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .footer-mail,
+  .footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-mail:hover,
+  .footer-mail:focus,
+  .footer-contact:hover,
+  .footer-contact:focus {
+    color: var(--accent-color);
+  }
+  .footer-social-container {
+    margin-left: 70px;
+  }
+  .footer-appeal {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .footer-social-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .footer-social-link-list {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  .footer-social-link-list:last-child {
+    margin-right: 0;
+  }
+  .footer-social-link-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #44454e;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-social-link-photo {
+    fill: #ffffff;
+  }
+  .footer-social-link-item:hover,
+  .footer-social-link-item:focus {
+    background-color: var(--accent-color);
+  }
+  .footer-signup {
+  margin-left: 93px;
+  }
+  .footer-label-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+      color: #FFFFFF;
+  margin-bottom: 20px;
+    }
+  .footer-signup-label {
+    position: relative;
+  }
+  .footer-signup-input {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: transparent;
+    background-color: transparent;
+    width: 358px;
+    padding: 14px 16px 14px 16px;
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer-signup-btn {
+    position: relative;
+    text-align: left;
+    width: 200px;
+    letter-spacing: 0.06em;
+    padding: 10px 28px 10px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    transition: background-color var(--anim), box-shadow var(--anim);
+  }
+  .footer-btn-send {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 2px;
+  }
+  .footer-signup-input:focus,
+  .footer-signup-input:not(:placeholder-shown) {
+    /* background-color: var(--accent-color); */
+    color: #fff;
+  }
+    .footer-signup-input:focus + .footer-signup-email,
+    .footer-signup-input:not(:placeholder-shown)+.footer-signup-email {
+      color: #fff;
+    }
+    .footer-signup-btn:hover,
+    .footer-signup-btn:focus {
+      background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
