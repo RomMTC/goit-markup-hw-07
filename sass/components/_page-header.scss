@@ -1,0 +1,42 @@
+//   Header
+.page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+    }
+    .page-header__container {
+        @extend .container;
+    display: flex;
+    align-items: center;
+    }
+    .page-header__mail {
+        @extend .link;
+        margin-left: auto;
+        margin-right: 50px;
+      }
+      .page-header__contact {
+     @extend .link;
+      }
+      .page-header__mail,
+      .page-header__contact {
+        //   @extend .link;
+        color: var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+          transition: color $primaryAnimation;
+      }
+      .page-header__mail:hover,
+      .page-header__mail:focus,
+      .page-header__contact:hover,
+      .page-header__contact:focus {
+        color: $accentColor;
+      }
+      .page-header__icon {
+        margin-right: 10px;
+        align-items: center;
+        fill: currentColor;
+      }

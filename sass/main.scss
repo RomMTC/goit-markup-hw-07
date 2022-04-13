@@ -1,8 +1,10 @@
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/modern-normalize';
+@import './components/page-header';
 @import './components/logo';
 @import './components/navigation';
+
 
 body {
   background-color: #ffffff;
@@ -30,13 +32,4 @@ display: block;
 max-width: 100%;
 height: auto;
 }
-//   Header
-.page-header {
-padding-top: 24px;
-padding-bottom: 25px;
-border-bottom: 1px solid #ececec;
-}
-.page-header__container {
-display: flex;
-align-items: center;
-}
+
