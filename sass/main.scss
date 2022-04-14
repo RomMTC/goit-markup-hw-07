@@ -1,4 +1,4 @@
-@import './utils/variables';
+@import './variables/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/modern-normalize';
@@ -6,7 +6,14 @@
 @import './components/page-header';
 @import './components/navigation';
 @import './components/page-footer';
-
+@import './components/modal';
+@import './components/modalform';
+@import './components/hero';
+@import './components/quality';
+@import './components/work';
+@import './components/team';
+@import './components/ourclients';
+@import './components/portfolio-hero';
 body {
   background-color: #ffffff;
   color: $primaryTextColor;
