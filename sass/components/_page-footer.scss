@@ -9,9 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    // flex-shrink: 0;
-    // flex-grow: 1;
-    // flex-grow: inherit;
   }
   .logo__secondary-color {
     @include logoColor(#ffffff);
@@ -101,10 +98,9 @@
   .page-footer__social-photo {
     fill: #ffffff;
   }
-
   .page-footer__signup {
   //   display: block;
-  margin-left: 86px;
+  margin-left: 93px;
   }
   .page-footer__signup {
     // display: block;
@@ -143,7 +139,6 @@
     &:not(:placeholder-shown) + .footer-signup-email {
       color: #fff;
     }
-
   }
   .page-footer__btn {
     position: relative;

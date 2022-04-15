@@ -403,7 +403,6 @@ img {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  margin: 0 93px 0 0;
 }
 
 .logo__secondary {
@@ -412,6 +411,10 @@ img {
 
 .logo__secondary-color {
   color: #000000;
+}
+
+.page-nav {
+  margin-left: 93px;
 }
 
 .page-nav__list {
@@ -1096,7 +1099,7 @@ img {
 }
 
 .page-footer__signup {
-  margin-left: 86px;
+  margin-left: 93px;
 }
 
 .page-footer__signup {

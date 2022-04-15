@@ -1,4 +1,7 @@
 // navigation
+.page-nav {
+  margin-left: 93px;
+}
 .page-nav__list {
 @extend %list;
 display: flex;
