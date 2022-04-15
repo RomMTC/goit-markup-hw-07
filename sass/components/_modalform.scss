@@ -38,7 +38,7 @@
     border-radius: 4px;
     margin-bottom: 10px;
     outline: none;
-    transition: border-color var(--anim), fill var(--anim);
+    transition: border-color $primaryAnimation, fill $primaryAnimation;
   }
   /* .modal-form-icon:hover {
     fill: var(--accent-color);
@@ -46,14 +46,14 @@
   .modal-form-input:hover,
   .modal-form-input:focus,
   .modal-form-input:not(:placeholder-shown) {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    border-color: $accentColor;
+    fill: $accentColor;
   }
   .modal-form-input:hover + .modal-form-icon,
   .modal-form-input:focus + .modal-form-icon,
   .modal-form-input:not(:placeholder-shown) + .modal-form-icon {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    border-color: $accentColor;
+    fill: $accentColor;
   }
   .modal-form-icon {
     position: absolute;
@@ -86,8 +86,8 @@
   .modal-form-message:hover,
   .modal-form-message:focus,
   .modal-form-message:not(:placeholder-shown) {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
+    border-color: $accentColor;
+    fill: $accentColor;
   }
   .modal-form-agreement {
     display: flex;
@@ -107,7 +107,7 @@
     background-origin: border-box;
     text-align: center;
     margin-right: 7px;
-    transition: background-color var(--anim);
+    transition: background-color $primaryAnimation;
     }
     /* .modal-form-agreement-input {
       border-style: none;
@@ -128,7 +128,7 @@
     border: none;
   } */
   .modal-form-agreement-input:checked + .modal-form-agreement-check {
-    border-color: var(--accent-color);
+    border-color: $accentColor;
     background-color: #188ce8;
     background-origin: border-box;
   }
@@ -144,7 +144,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: $accentColor;
     text-decoration: underline;
   }
   .modal-form-btn {
@@ -169,6 +169,6 @@
   }
   .modal-form-btn:hover,
   .modal-form-btn:focus {
-    background-color: #188CE8;
+    background-color: $secondary-accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }

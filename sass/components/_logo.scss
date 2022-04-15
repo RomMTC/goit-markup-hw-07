@@ -1,5 +1,5 @@
 .logo__first {
-  @extend .link;
+  @extend %link;
     color: #2196f3;
     font-family: $secondaryFont;
     font-weight: 700;

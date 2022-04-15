@@ -5,7 +5,7 @@
     border-bottom: 1px solid #ececec;
     }
     .page-header__container {
-        @extend .container;
+        @extend %container;
     display: flex;
     align-items: center;
     }
@@ -13,17 +13,17 @@
       @include logoColor(#000000);
     }
     .page-header__mail {
-        @extend .link;
+        @extend %link;
         margin-left: auto;
         margin-right: 50px;
       }
       .page-header__contact {
-     @extend .link;
+     @extend %link;
       }
       .page-header__mail,
       .page-header__contact {
         //   @extend .link;
-        color: var(--primary-text-color);
+        color: $primaryTextColor;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;

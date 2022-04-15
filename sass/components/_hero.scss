@@ -27,7 +27,7 @@
   }
   .hero-btn {
     padding: 10px 32px 10px 32px;
-    background-color: var(--accent-color);
+    background-color: $accentColor;
     color: #ffffff;
     font-weight: 700;
     font-size: 16px;
@@ -36,9 +36,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $primaryAnimation;
   }
   .hero-btn:hover,
   .hero-btn:focus {
-    background-color: var(--secondary-accent-color);
+    background-color: $secondary-accent-color;
   }

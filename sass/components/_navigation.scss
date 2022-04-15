@@ -1,6 +1,6 @@
 // navigation
 .page-nav__list {
-@extend .list;
+@extend %list;
 display: flex;
 align-items: center;
 }
@@ -11,7 +11,7 @@ align-items: center;
     margin-right: 0px;
 }
 .page-nav__link {
-@extend .link;
+@extend %link;
 position: relative;
 display: block;
 color: $secondaryTextColor;

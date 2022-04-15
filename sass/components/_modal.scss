@@ -45,7 +45,7 @@
   }
   .modal-button-closex:hover,
   .modal-button-closex:focus {
-    fill: var(--accent-color);
+    fill: $accentColor;
   }
   .backdrop.is-hidden {
     opacity: 0;

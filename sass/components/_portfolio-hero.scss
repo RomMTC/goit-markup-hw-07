@@ -14,13 +14,13 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color $primaryAnimation,
+    color $primaryAnimation,
+    box-shadow $primaryAnimation;
   }
   .portfolio-btn:hover,
   .portfolio-btn:focus {
-    background-color: var(--secondary-accent-color);
+    background-color: $secondary-accent-color;
     color: #ffffff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -62,7 +62,7 @@
     margin-right: 30px;
     margin-bottom: 30px;
     cursor: pointer;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow $primaryAnimation;
   }
   .portfolio-projects-item:nth-child(3n + 3) {
     margin-right: 0;
@@ -87,7 +87,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--secondary-text-color);
+    color: $secondaryTextColor;
   }
   .portfolio-projects-descr {
     font-size: 16px;
@@ -118,7 +118,7 @@
     background-color: rgba(33, 150, 243, 0.9);
   
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $primaryAnimation;
   }
   .portfolio-projects-item:hover .portfolio-wrapper-item {
     transform: translateY(0);
