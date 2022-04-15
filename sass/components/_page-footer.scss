@@ -17,7 +17,7 @@
     @include logoColor(#ffffff);
   }
   .page-footer__address {
-    // display: inline-block;
+    display: inline-block;
     margin-top: 20px;
     font-style: normal;
     font-size: 14px;
@@ -25,7 +25,7 @@
     color: #ffffff;
   }
   .page-footer_list {
-    @extend %list
+    @extend %list;
   }
   .page-footer__item {
     margin-top: 9px;
