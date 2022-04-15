@@ -1,7 +1,9 @@
 @import './variables/variables';
 @import './utils/placeholders';
 @import './utils/mixins';
+@import './utils/visuallyhidden';
 @import './utils/modern-normalize';
+@import './base/base';
 @import './components/logo';
 @import './components/page-header';
 @import './components/navigation';
@@ -14,30 +16,3 @@
 @import './components/ourclients';
 @import './components/page-footer';
 @import './components/portfolio-hero';
-body {
-  background-color: #ffffff;
-  color: $primaryTextColor;
-  font-family: $primaryFont;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-h1,
-h2,
-h3,
-p {
-margin-top: 0;
-margin-bottom: 0;
-}
-h1:last-child,
-h2:last-child,
-h3:last-child,
-p:last-child {
-margin-bottom: 0;
-}
-img {
-display: block;
-max-width: 100%;
-height: auto;
-}
-

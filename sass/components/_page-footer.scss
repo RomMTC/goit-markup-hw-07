@@ -26,23 +26,26 @@
   .page-footer__item {
     margin-top: 9px;
     margin-bottom: 9px;
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
-  .page-footer__item:last-child {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+
   .page-footer__mail,
   .page-footer__contact {
     @extend %link;
     color: rgba(255, 255, 255, 0.6);
     transition: color $primaryAnimation;
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      color: $accentColor;
+    }
   }
-  .page-footer__mail:hover,
-  .page-footer__mail:focus,
-  .page-footer__contact:hover,
-  .page-footer__contactt:focus {
-    color: $accentColor;
-  }
+
   .page-footer__social {
     margin-left: 70px;
   }
@@ -67,10 +70,11 @@
     @extend %list;
     margin-top: 20px;
     margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .page-footer__social-list:last-child {
-    margin-right: 0;
-  }
+
   .page-footer__social-item {
     display: flex;
     flex-wrap: wrap;
@@ -84,14 +88,16 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   
     transition: background-color $primaryAnimation;
+
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
+    }
   }
   .page-footer__social-photo {
     fill: #ffffff;
   }
-  .page-footer__social-item:hover,
-  .page-footer__social-item:focus {
-    background-color: $accentColor;
-  }
+
   .page-footer__signup {
     display: block;
   margin-left: 83px;
@@ -125,6 +131,16 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    &:focus,
+  &:not(:placeholder-shown) {
+    /* background-color: $accentColor; */
+    color: #fff;
+  }
+    &:focus + .footer-signup-email,
+    &:not(:placeholder-shown) + .footer-signup-email {
+      color: #fff;
+    }
+
   }
   .page-footer__btn {
     position: relative;
@@ -141,23 +157,15 @@
     background-color: $accentColor;
     color: #FFFFFF;
     transition: background-color $primaryAnimation, box-shadow $primaryAnimation;
+    &:hover,
+    &:focus {
+      background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
   }
   .page-footer__btn-send {
     position: absolute;
     margin-left: 10px;
     margin-top: 2px;
   }
-  .page-footer__signup-input:focus,
-  .page-footer__signup-input:not(:placeholder-shown) {
-    /* background-color: $accentColor; */
-    color: #fff;
-  }
-    .page-footer__signup-input:focus + .footer-signup-email,
-    .page-footer__signup-input:not(:placeholder-shown)+.footer-signup-email {
-      color: #fff;
-    }
-    .page-footer__btn:hover,
-    .page-footer__btn:focus {
-      background-color: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
+  

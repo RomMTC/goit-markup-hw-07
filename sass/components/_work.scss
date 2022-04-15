@@ -16,10 +16,11 @@
   .main-work-item {
     position: relative;
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .main-work-item:last-child {
-    margin-right: 0;
-  }
+
   .main-work-wrapper {
     position: absolute;
     bottom: 0;

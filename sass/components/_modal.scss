@@ -42,11 +42,12 @@
     cursor: pointer;
     padding: 6px;
     transition: fill var(--anim);
+    &:hover,
+    &:focus {
+      fill: $accentColor;
+    }
   }
-  .modal-button-closex:hover,
-  .modal-button-closex:focus {
-    fill: $accentColor;
-  }
+
   .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
